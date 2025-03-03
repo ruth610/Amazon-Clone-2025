@@ -1,0 +1,39 @@
+.category{
+    height: 350px;
+    width: 350px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+
+}
+.category__container{
+    margin-top: -40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+    overflow: hidden;
+    grid-gap: 20px;
+}
+.category h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+.category a{
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+}
+.category p, .category h2{
+    padding: 5px;
+    margin-left: 15px;
+}
+.category p{
+    font-weight: bold;
+    color: rgb(89, 89, 245);
+    font-size: 15px;
+}
+.category img{
+    width: 100%;
+    object-fit: contain;
+    max-height: 250px;
+    padding: 0 10px;
+}
