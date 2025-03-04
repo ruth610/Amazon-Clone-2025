@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { categoryImage } from './CategoryData';
 import CategoryCard from './CategoryCard';
 import classes from './category.module.css';
