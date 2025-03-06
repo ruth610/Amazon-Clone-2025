@@ -23,18 +23,18 @@ const Product = () => {
         })
     },[]);
   return (
-    <div>
         <LayOut>
-            {loading?<Loader />:
-            <ProductCard 
-            data={product}
-            flex = {true}
-            renderDesc={true}
-            btnShow={true}
-            />
-            }
+            <div className={classes.product__detail}>
+                {loading?<Loader />:
+                <ProductCard 
+                data={product}
+                flex = {true}
+                renderDesc={true}
+                btnShow={true}
+                />
+                }
+            </div>
         </LayOut>
-    </div>
   )
 }
 

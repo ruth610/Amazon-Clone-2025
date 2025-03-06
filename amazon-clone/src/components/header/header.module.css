@@ -18,7 +18,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 25px;
+    justify-content: space-evenly;
+    gap: 10px;
 }
 .logo_country{
     display: flex;
@@ -26,6 +27,7 @@
     justify-content: center;
     color: white;
     gap: 10px;
+    margin-left: 10px;
    
 }
 .deliver{
@@ -64,14 +66,17 @@
     width: 100%;
     overflow: hidden;
     color: white;
+    border-radius: 10px;
 }
 .select_menu{
     background-color: #D4D4D4;
     border: none;
+    /* padding: 6px; */
+
 }
 .search_icon{
     background-color: #F3A847;
-    padding: 6px;
+    padding: 5px;
     color: black;
 }
 .search_bar input{
@@ -84,17 +89,21 @@
     padding: 10px;
     font-weight: bold;
     outline: 1px solid white;
-    width: 100%;
+    /* width: 100%; */
 }
 .account_cart{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
+    padding-right: 10px;
 }
 a{
     color: white;
     text-decoration: none;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
 }
 .sign_in span{
     font-size: 15px;
@@ -117,7 +126,7 @@ a{
 .logo_country a:hover,
 .account_cart a:hover,
 .lower__container ul li:hover{
-    border: 1px solid white;
+    border-color: white;
     border-radius: 3px;
     cursor: pointer;
 
@@ -133,6 +142,8 @@ a{
 }
 .lower__container ul li{
     padding: 6px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
 }
 .lower__container ul{
     margin-left: 10px;
@@ -141,4 +152,31 @@ a{
     list-style: none;
     font-size: 15px;
     gap: 10px;
+}
+.cart__container{
+    display: flex;
+    align-items: center;
+}
+.cart{
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+}
+.cart__icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+.cart_amount{
+    position: absolute;
+    top: -10px;
+    right: 1px;
+    color: #F07512;
+    font-size: 20px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import {Link} from 'react-router-dom'
 import SearchIcon from '@mui/icons-material/Search';
-import ShopIcon from '@mui/icons-material/Shop2'
+import { FiShoppingCart } from "react-icons/fi";
 import Flag from "react-world-flags";
 {/* <Flag code="US" style={{ width: 50, height: 30 }} />; */}
 import classes from './header.module.css';
@@ -49,9 +49,11 @@ const Header = () => {
                     <p>Returns</p>
                     <span>& Orders</span>
                 </Link>
-                <Link to='/cart' className={classes.cart}>
-                    <ShopIcon />
-                    <span>{basket.length}</span>
+                <Link to='/cart' className={classes.cart__container}>
+                    <div className={classes.cart}>
+                        <FiShoppingCart style={{fontSize:'30px'}} className={classes.cart__icon}/>
+                        <span className={classes.cart_amount}>{basket.length}</span>
+                    </div>
                     <p>cart</p>
                 </Link>
             </div>

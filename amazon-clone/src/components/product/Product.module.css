@@ -56,13 +56,24 @@
 }
 .product__flexed{
     display: flex;
+    flex-direction: row;
     padding-top: 110px;
     box-shadow: none;
-    height: auto;
+    height: 100vh;
     gap: 10px;
     width: 100%;
-    height: 50vh;
     border: none;
+}
+.product__flexed .product__info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+}
+.product__flexed .price,
+.product__flexed .title,
+.product__flexed .card__btn{
+    display: inline-block;
 }
 .product__flexed h3{
     padding: 20px auto;
@@ -72,6 +83,7 @@
     display: block;
     position: static;
     width: 150px;
+    height: 5vh;
     margin-right: 40px;
 
 }

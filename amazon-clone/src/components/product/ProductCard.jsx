@@ -23,22 +23,24 @@ const ProductCard = ({data,flex,renderDesc,btnShow}) => {
         <Link to={`products/${id}`}>
             <img src={image} alt="" />
         </Link>
-        <div className={classes.title}>
-            <h2 style={{fontSize: '20px'}}>{title}</h2>
-            {renderDesc && <div style={{maxWidth:'500px'}}>{description}</div>}
-            <div className={classes.rating}>
-                <Rating value={rating?.rate || 0} precision={0.1}/>
-                <small>{rating?.count || 0}</small>
-            </div>
-            
+        <div className={classes.product__info}>
+                <div className={classes.title}>
+                    <h2 style={{fontSize: '20px'}}>{title}</h2>
+                    {renderDesc && <div style={{maxWidth:'500px'}}>{description}</div>}
+                    <div className={classes.rating}>
+                        <Rating value={rating?.rate || 0} precision={0.1}/>
+                        <small>{rating?.count || 0}</small>
+                    </div>
+                    
+                </div>
+                <div className={classes.price}>
+                    {/* price  */}
+                    <CurrencyFormat amount={price}/>
+                </div>
+                {btnShow?<button className={classes.card__btn} onClick={Add_to_cart}>
+                    add to cart
+                </button>:''}
         </div>
-        <div className={classes.price}>
-            {/* price  */}
-            <CurrencyFormat amount={price}/>
-        </div>
-        {btnShow?<button className={classes.card__btn} onClick={Add_to_cart}>
-            add to cart
-        </button>:''}
         
     </div>
   )
