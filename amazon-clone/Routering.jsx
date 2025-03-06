@@ -9,7 +9,7 @@ import Results from './src/pages/results/Results';
 import Order from './src/pages/order/Order';
 const Routering = () => {
   return (
-       <BrowserRouter basename='/'>
+       <BrowserRouter basename='/Amazon-Clone-2025'>
             <Routes>
                 <Route path='' element={<Landing />}/>
                 <Route path='Auth' element={<Login />}/>
