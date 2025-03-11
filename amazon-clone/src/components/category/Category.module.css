@@ -1,20 +1,23 @@
+.category__container{
+    margin-top: -140px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    place-items: center;
+    max-width: 1600px;
+    gap: 50px;
+    overflow: hidden;
+}
 .category{
     height: 300px;
     width: 270px;
+    margin: 20px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
     z-index: 1;
     border: 1px solid rgb(206, 202, 202);
-    margin-top: -150px;
     background-color: white;
 
 }
-.category__container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    place-items: center;
-    grid-gap: 30px;
-    margin: 0 50px;
-}
+
 .category h2{
     font-size: 22px;
     font-weight: 500;

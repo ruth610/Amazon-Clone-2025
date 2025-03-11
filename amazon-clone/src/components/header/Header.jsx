@@ -8,8 +8,9 @@ import Flag from "react-world-flags";
 import classes from './header.module.css';
 import LowerHeader from './LowerHeader';
 import { DataContext} from '../dataProvider/DataProvider';
+import { auth } from '../../../utility/firebase';
 const Header = () => {
-    const [{basket},dispatch] = useContext(DataContext)
+    const [{basket,user},dispatch] = useContext(DataContext)
     // console.log(basket);
   return (
     <section className={classes.main}>
@@ -41,9 +42,22 @@ const Header = () => {
                     </select>
                 </a>
                 
-                <Link to='/Auth' className={classes.sign_in}>
-                    <p>Hello, sign in</p>
-                    <span>Account & Lists</span>
+                <Link to={!user && `/Auth`} className={classes.sign_in}>
+                    <>
+                        {user?(
+                            <>
+                                <p>Hello, {user?.email?.split('@')[0]}</p>
+                                <span onClick={()=>auth.signOut()}>Sign Out</span>
+                            </>
+                        ):(
+                            <>
+                                <p>Hello, sign in</p>
+                                <span>Account & Lists</span>
+                            </>
+                        )
+                       }
+                    </>
+                    
                 </Link>
                 <Link to='/order' className={classes.order}>
                     <p>Returns</p>
