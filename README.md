@@ -1,8 +1,9 @@
 # Amazon-Clone-2025
-🛒 Amazon Clone
+
+# 🛒 Amazon Clone
 A fully functional Amazon Clone that replicates key features of the original Amazon platform. Built with modern web technologies, this project includes secure authentication with Amazon Cognito, real-time payment integration, a responsive eCommerce UI, and dynamic product management. This project was developed as a showcase of full-stack development skills.
 
-🚀 Features
+# 🚀 Features
 🧑‍💼 Authentication & Authorization
 Amazon Cognito Integration
 
@@ -12,7 +13,7 @@ Token-based authentication with secure access to protected routes
 
 Role-based access (e.g., Admin vs Customer)
 
-🛍 Product Browsing
+# 🛍 Product Browsing
 Browse a wide range of products across categories
 
 Product cards with images, titles, prices, and ratings
@@ -21,7 +22,7 @@ Filter and sort products by category, price, rating, etc.
 
 Search bar with live filtering
 
-🛒 Shopping Cart
+# 🛒 Shopping Cart
 Add/remove items from cart
 
 Update quantities
@@ -30,7 +31,7 @@ View subtotal, tax, and total amount
 
 Cart state persists using localStorage or global state
 
-💳 Payment Integration
+# 💳 Payment Integration
 Checkout page with order summary
 
 Real payment processing with Stripe / Amazon Pay
@@ -46,14 +47,11 @@ View order history
 
 Secure logout and re-authentication
 
-🧑‍💼 Admin Dashboard (if implemented)
-Manage users (view, delete, or update roles)
-
 Manage products (add, edit, delete)
 
 View and manage orders
 
-🎨 UI & UX Design
+# 🎨 UI & UX Design
 Responsive layout for mobile, tablet, and desktop
 
 Clean, professional UI modeled after Amazon
@@ -64,8 +62,9 @@ Framer Motion / CSS Transitions for animations
 
 Icons and assets for cart, search, categories, etc.
 
-🧠 Technologies Used
-💻 Frontend
+# 🧠 Technologies Used
+
+# 💻 Frontend
 React + TypeScript – Component-based architecture
 
 React Router DOM – For navigation and protected routing
@@ -78,20 +77,20 @@ TailwindCSS / Bootstrap – For responsive UI design
 
 Framer Motion – For animation
 
-🔐 Authentication
+# 🔐 Authentication
 firebase/firestore
 
-💳 Payment
+# 💳 Payment
 Stripe / Amazon Pay – Payment processing during checkout
 
-🌐 Backend (if included)
+# 🌐 Backend
 Node.js + Express – For handling API routes
 
 MySQL / MongoDB – For storing products, orders, and users
 
 RESTful API – Well-structured endpoints for CRUD operations
 
-🖼 Screenshots
+# 🖼 Screenshots
 Add screenshots here of:
 
 Homepage
@@ -122,7 +121,7 @@ sign in
 
 
 
-📦 Installation & Setup
+# 📦 Installation & Setup
 
 # Clone the repository
 git clone https://github.com/your-username/amazon-clone.git
